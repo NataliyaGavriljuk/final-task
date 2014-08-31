@@ -1,0 +1,167 @@
+#calculator h1{
+	font-size: 27px;
+	margin-bottom: 39px; 
+}
+.calculation-area{
+	width: 809px;
+	height: 513px;
+	margin: auto;
+}
+.calculation-area .left{
+	width: 377px;
+	float: left;
+}
+.calculation-area .right{
+	width: 377px;
+	height: 353px;
+	float: right;
+}
+.calculation-area .input-data{
+	height: 53px;
+	width: 100%;
+	border: 2px groove #c8c7c7;
+	background: -webkit-linear-gradient(bottom, #9b9a9c 0%, #fdfeff 100%);
+}
+.calculation-area .input-data input{
+	width: 184px;
+	height: 32px;
+	margin: 11px  0 0 14px;
+	background: #fff;
+	font: bold 10px "FrutigerLTCondensed";
+	text-align: center;
+	border:1px groove #e0dfdf;
+}
+.calculation-area .input-data button:first-of-type{
+	width: 97px;
+	height: 32px;
+	border: 1px solid #d14498;
+	margin-left: 0;
+	color: #fff;
+	font: bold 13px "FrutigerLTCondensed";
+	background: -webkit-linear-gradient(bottom, #e31e86 0%, #e3308b 50%,  #ddd0e3 100%);
+}
+.calculation-area .input-data button:last-of-type{
+	width: 29px;
+	height: 29px;
+	background: #ededed;
+	color: #502d80;
+	font: 17px "FrutigerBlack";
+	font-weight: bold;
+	border: 1px solid #cfcfd0;
+	border-radius: 20px;
+	margin-left: 34px;
+}
+
+.calculation-area .info{
+	height: 54px;
+	color: #7c7a7b;
+	padding-left: 13px;
+	font: 300 10px "FrutigerLTCondensed";
+	background: -webkit-linear-gradient(top, #e5e6e8 0%, #fff 100%);
+}
+.calculation-area p span{
+	color: #e31e86;
+}
+.calculation-area ul{
+	list-style-type: none;
+}
+.calculation-area ul li{
+	font-family: "FrutigerBlack";
+	margin-bottom: 4px;
+}
+.calculation-area ul li:last-of-type .description,
+.calculation-area .right ul li:nth-of-type(2) .description
+{
+	height: 52px;
+}
+.calculation-area ul li:last-of-type{
+	margin-bottom: 9px;
+}
+.calculation-area .left ul li:nth-of-type(3) .description{
+	padding-top: 5px;
+}
+.calculation-area ul li .calculate{
+	height: 33px;
+	padding:5px 6px 0 16px;
+	border:1px solid #ebebeb;
+	background: -webkit-linear-gradient(bottom, #acabab 0%, #c1c0c0 100%);
+}
+.calculation-area ul li .calculate p{
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+}
+.calculation-area ul li .calculate sup{
+	font-size: 10px;
+}
+.calculation-area ul li .calculate input{
+	float: right;
+	height: 26px;
+	width: 93px;
+	padding-right: 9px;
+	text-align: right;
+	margin-top: -2px;
+	color: #e31e86;
+	font-weight: bold;
+	font-size: 16px;
+	border:1px solid #a4a3a3;
+}
+.calculation-area ul .description{
+	height: 41px;
+	position: relative;
+	padding: 9px 0 0 32px;
+	font-size: 10px;
+	background: -webkit-linear-gradient(bottom, rgba(167, 175, 183, 1.0) 0%, rgba(215, 220, 223, 1.0) 100%);
+}
+.calculation-area ul .description p{
+	font: bold 10px/12px "FrutigerLTCondensed";
+	color: #fff;
+}
+.calculation-area ul li .plus{
+	width: 21px;
+	height: 21px;
+	color: #7c7a7b;
+	font-size: 16px;
+	position: absolute;
+	left: 5px;
+	line-height: 10px;
+	padding-top: 3px;
+	border:1px solid #adacab;
+	border-radius: 15px;
+	background: #ebebea;
+	text-align: center; 
+}
+.calculation-area .addition{
+	width: 100%;
+	height: 33px;
+	background: #502d80;
+	color: #fff;
+	font:17px "FrutigerBlack";
+	padding: 6px 0 0 12px;
+	text-align: left;
+	clear: both;
+	border-top: 1px solid #aeabd0;
+	border-right: 1px solid #aeabd0;
+}
+.calculation-area .finally-results{
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+}
+.calculation-area .finally-results li{
+	/* width: 213px; */
+	height: 56px;
+	padding: 8px 9px 0 10px;
+	background: -webkit-linear-gradient(top, rgba(235, 242, 250, 1.0) 0%, rgba(246, 251, 255, 1.0) 100%);
+}
+.calculation-area .finally-results li p{
+	color: #7c7a7b;
+	font:14px "FrutigerBlack";
+}
+.calculation-area .finally-results li p sup{
+	font-size: 8px;
+}
+#calculator .footnote{
+	font-size: 12px;
+	margin-top: 40px;
+	padding-left: 108px;
+}

@@ -1,0 +1,98 @@
+/* reset*/
+div,button,input,
+p,ul,li{
+	box-sizing: border-box;
+}
+*{
+	margin: 0;
+	padding: 0;
+} 
+div{
+	box-sizing:border-box;
+}
+button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+#graphics,
+#calculator,
+#competitors{
+	-webkit-box-orient: horizontal;
+}
+.wrapper{
+	width: 1024px;
+	height: 768px;
+	background: url('../assets/images/background.png') no-repeat;
+}
+menu{
+	position: absolute;
+}
+menu .home{
+	width: 65px;
+	border: 0;
+	background: -webkit-linear-gradient(top, rgba(213,213,213, 0.6) 0%, rgba(247,247,247, 0.6) 50%, rgba(255,255,255, 0.6) 100%);
+}
+menu button{
+	float: left;
+	height: 45px;
+	width: 191.8px;
+	border-left: 1px solid #cbcbcb;
+	font: bold 15px/16px "FrutigerLTCondensed";
+	color: #676767;
+	background: -webkit-linear-gradient(top, #e8e8e8 0%, #fbfbfb 100%);
+}
+menu button.selected{
+	color: #e3007c;
+}
+.wrapper-content{
+	width: 100%;
+	padding-top: 87px;
+	height: 768px;
+	box-sizing: border-box;
+	overflow: hidden;
+} 
+.slides{
+	display: -webkit-box; 
+}
+h1{
+	text-align: center;
+	color: #432171;
+	font: 28px "FrutigerBlack";
+}
+h1 sup{
+	font-size: 18px;
+}
+.footnote {
+	padding-left: 66px;
+	color: #484a4b;
+	font: 14px/16px "FrutigerLTLightCondensed";
+}
+.footnote sup{
+	font-size: 9px;
+}
+.slide{
+	position: relative;
+	width: 1024px;
+}
+/* Functionality */
+.wrapper-content.graphics .slides{
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.wrapper-content.calculator .slides{
+	-webkit-transform: translate3d(-1024px, 0, 0);
+}
+.wrapper-content.competitors .slides{
+	-webkit-transform: translate3d(-2048px, 0, 0);
+}
+.chart-area .chart .group-bar .bar{
+	-webkit-transform: scaleY(0); 
+}
+.animate .chart-area .chart .group-bar .bar{
+	-webkit-transition: 1s 0.5s linear;
+	-webkit-transform: scaleY(1); 
+}
+.slides{
+	width: 3072px;
+	-webkit-transition: 1s linear;
+}

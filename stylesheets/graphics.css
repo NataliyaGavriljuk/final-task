@@ -1,0 +1,133 @@
+ #graphics h1{
+	margin-bottom: 80px; 
+} 
+.chart-area{
+	position: relative;
+	margin: auto;
+	width: 599px;
+	height: 360px; 
+	border: 2px solid #4a2278; 
+	background: #fff;
+	font:  15px "FrutigerBlack";
+	border-radius: 0 35px 0 35px;
+	box-shadow:0 14px 12px -9px rgba(136, 139, 143, 0.5);
+}
+.chart-area .vertical-label{
+	left: -106px;
+	top: 60px;
+	position: absolute; 
+}
+.chart-area .vertical-label sup{
+	font-size: 11px;
+}
+.chart-area .vertical-scale{
+	-webkit-border-radius: 0  0 0 35px;
+	width: 49px;
+	height: 100%;
+	float: left;
+	padding: 30px 5px 0 0 ;
+	box-sizing: border-box;
+	border-right: 1px solid #ececec;
+	background: #dad9da;
+}
+ol{
+   	list-style-type: none; 
+   	counter-reset:  item 9 ; 
+}
+ol li{
+	text-align: right;
+	width: 100%;
+	margin-bottom: 16px;
+	display: block;
+}
+ol li:before{
+  	content: counter(item) ' '; 
+  	counter-increment: item -1; 
+} 
+ol li:after{
+	content: '';
+	display: block;
+	width: 9px;
+	margin: -11px 0 0 48px;
+	position: absolute;
+	border-top: 1px solid #636362;
+	border-bottom: 1px solid #b8b8b7;
+}
+ol li:last-of-type:after{
+	display: none;
+}
+.chart-area .chart{
+	float: right;
+	width: 546px;
+	height: 100%;
+}
+.chart-area .chart h2{
+ 	margin: 23px 0 13px 0;
+ 	font: bold 16px/15px "Arial", sans-serif;
+ 	text-align: center;
+}
+ .chart-area .chart .group-bar{
+ 	margin: auto;
+ 	width: 267px;
+ 	height: 242px;
+ 	display: -webkit-box;
+	-webkit-box-align: end;
+}
+.chart-area .chart .group-bar .bar{
+	width: 50%;
+	-webkit-border-radius: 5px 5px 0 0;	
+	-webkit-transform-origin-y: bottom;
+}
+.chart-area .chart .group-bar .bar:first-of-type{
+  	height: 100%;
+  	background-color: #1785a3;
+}
+.chart-area .chart .group-bar .bar p{
+	color: #fff;
+	font: bold 16px/17px "FrutigerLTCondensed";
+	text-align: center;
+	text-transform: uppercase;
+	opacity: 0;
+}
+.chart-area .chart .group-bar .bar p span{
+	text-transform: lowercase;
+	font-size: 12px;
+}
+.chart-area .chart .group-bar .bar p:last-of-type{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 2px;
+	font: bold 12px/13px "FrutigerLTCondensed";
+	bottom: 0px;
+}
+.chart-area .chart .group-bar .bar:last-of-type{
+  	height: 171px;
+  	background-color: #e3007c;
+  }
+  .chart-area .chart .horisontal-line{
+	width: 100%;
+	border-top: 1px solid #9982b3;
+	border-bottom: 4px solid #4a2278; 
+  }
+  .chart-area .chart p:first-of-type{
+	margin: 6px 0 0 -5px;
+  } 
+  .chart-area .chart p:last-of-type{
+	margin-top: -12px;
+	text-align: center;
+	font: bold 16px/15px "FrutigerLTCondensed";
+  }
+  .chart-area img{
+  	position: absolute;
+  	bottom: 0;
+  	right: -110px;
+
+  }
+ #graphics .footnote {
+ 	margin-top: 84px;
+ }
+.animate .chart-area .chart .group-bar .bar p{
+	opacity: 1;
+	-webkit-transition: 0.5s 1.5s linear;
+}

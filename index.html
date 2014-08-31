@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Final-task</title>
+	<link rel="stylesheet" href="stylesheets/fonts.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/graphics.css"> 
+	<link rel="stylesheet" href="stylesheets/calculator.css">
+	<link rel="stylesheet" href="stylesheets/competitors.css">
+</head>
+<body>
+	<div class="wrapper">
+		<menu>
+			<button class="home">
+				<img src="assets/images/home.png">
+			</button>
+			<button data-active="graphics">Graphics</button>
+			<button data-active="calculator">Calculator</button>
+			<button data-active="competitors">Competitors</button>
+		</menu>
+		<div class="wrapper-content">
+			<div class="slides">
+				<section class="slide" id="graphics">
+					<h1>Xarelto<sup>®</sup>: An Effective Treatment Option<br>in Your VTE Patients with Cancer<sup>a,8</sup></h1>
+					<div class="chart-area">
+						<p class="vertical-label">% PATIENTS<sup>b</sup></p>
+						<div class="vertical-scale">
+							<ol >
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ol>
+						</div>
+						<div class="chart">
+							<h2>HR 0.69;<br> 95% CI 0.36-1.33</h2>
+							<div class="group-bar">
+								<div class="bar animate-down">
+									<p>7.1<br><span>n=20/281</span></p>
+									<p>enoxaparin /<br>vka</p>
+								</div>
+								<div class="bar animate-down">
+									<p>5.1<br><span>n=16/316</span></p>
+									<p>xarelto</p>
+								</div>
+							</div>
+							<div class="horisontal-line"></div>
+							<p>0</p>
+							<p>Cancer</p>
+						</div>
+						<img src="assets/images/man.png">
+					</div>
+					<p class="footnote"><sup>a</sup>Xarelto is contraindicated in lesions or conditions, if they are considered to be a significant risk for major<br>bleeding, which may include the presence of malignant neoplasms at high risk of bleeding.<br><sup>b</sup>Outcome: symptomatic, recurrent VTE.</p>
+				</section>
+
+				<!-- calculator -->
+				<section class="slide" id="calculator">
+					<h1>Xarelto<sup>®</sup>Estimator of Resources Saved</h1>
+					<div class="calculation-area">
+						<div class="left">
+							<div class="input-data">
+								<input type="text" placeholder="Enter number of DVT patients here" data-bind="value:DVT">
+								<button>CALCULATE</button>
+								<button>?</button>
+							</div>
+							<div class="info">
+								<p>Assumptions to estimate calculations: proportion of patients with DVT contraindicated<br>for Xarelto or LMWH/VKA<sup>1,2</sup> =  7.5%<br><strong>Number of patients with DVT - 7.5% = <span data-bind="text:a"></span></strong> Total number of DVT patients<br>eligible for dual LMWH/VKA or Xarelto</p>
+							</div>
+							<ul>
+								<li>
+									<div class="calculate">
+										<p>Injections avoided<sup>3-7</sup></p>
+										<input type="text" data-bind="value:bc">			
+									</div>
+									<div class="description">
+										<div class="plus">+</div>
+										<p>Injections avoided = number of LMVH injections received by cancer patients<br>with DVT+LMWH injections received by DVT patients without cancer</p>
+									</div>
+								</li>
+								<li>
+									<div class="calculate">
+										<p>INR clinic visits avoided<sup>3,7,8</sup></p>
+										<input type="text" data-bind="value:e">			
+									</div>
+									<div class="description">
+										<div class="plus">+</div>
+										<p>INR clinic visits avoided = number of DVT patiens eligible for<br>VKA treatment x number of INR monitoring visits per patient</p>
+									</div>
+								</li>
+								<li>
+									<div class="calculate">
+										<p>Nurse visits avoided<sup>9</sup></p>
+										<input type="text" data-bind="value:g">			
+									</div>
+									<div class="description">
+										<div class="plus">+</div>
+										<p>Nurse assistance visits avoided = number of non-cancer DVT patients eligible<br>for inital LMWH treatment x proportion of these patients treated by nurses<br>in their own homes x mean number of LMWH injections administered</p>
+									</div>
+								</li>
+								<li>
+									<div class="calculate">
+										<p>Hospital bed days saved<sup>10</sup></p>
+										<input type="text" data-bind="value:h">			
+									</div>
+									<div class="description">
+										<div class="plus">+</div>
+										<p>Hospital bed days saved = number of eligible DVT patiets x proportion of DVT<br>patients hospitalised x number of hospital bed days saved per DVT patient<br>treated with Xarelto </p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="input-data">
+								<input type="text" placeholder="Enter number of patients with PE here" data-bind="value:PE">
+								<button>CALCULATE</button>
+								<button>?</button>
+							</div>
+								<p class="info">
+									Assumptions to estimate calculations: proportion of patients with PE contraindicated<br>
+									for Xarelto or LMWH/VKA<sup>1,2</sup> =  15%<br>
+									<strong>Number of patients with PE - 15% = <span data-bind="text:aPE"></span></strong> Total number of PE patients eligible<br>
+									for dual LMWH/VKA or Xarelto
+								</p>
+								<ul>
+									<li>
+										<div class="calculate">
+											<p>Injections avoided<sup>3-6,11</sup></p>
+											<input type="text" data-bind="value:bcPE">
+										</div>
+									
+										<div class="description">
+											<div class="plus">+</div>
+											<p>Injections avoided = number of LMVH injections received by cancer patients<br> with DVT+LMWH injections received by DVT patients without cancer</p>
+										</div>
+									</li>
+									<li>
+										<div class="calculate">
+											<p>INR clinic visits avoided<sup>3,8,11</sup></p>
+											<input type="text" data-bind="value:i">			
+										</div>
+										<div class="description">
+											<div class="plus">+</div>
+											<p>INR clinic visits avoided = number of PE patiens eligible for VKA<br>treatment x number of INR monitoring visits per patient</p>
+										</div>
+									</li>
+									<li>
+										<div class="calculate">
+											<p>Hospital bed days saved<sup>10</sup></p>
+											<input type="text" data-bind="value:j">			
+										</div>
+										<div class="description">
+											<div class="plus">+</div>
+											<p>Hospital bed days saved = number of eligible PE patiets x proportion of PE<br>patients hospitalised x number of hospital bed days saved per PE patient<br>treated with Xarelto</p>
+										</div>
+								</li>
+							</ul>
+						</div>
+						<p class="addition"> Combined DVT + PE Resources Saved</p>
+						<ul class="finally-results">
+							<li>
+								<p>Injections avoided<sup>3-7,11</sup><br><span data-bind="text:injectionsAvoided"></span></p>
+							</li>
+							<li>
+								<p>INR clinic visits avoided<sup>3,7,8,11</sup><br><span data-bind="text:INRclinicVisits"></span></p>
+							</li>
+							<li>
+								<p>Nurve visits avoided<sup>9</sup><br><span data-bind="text:NurveVisits"></span></p>
+							</li>
+							<li>
+								<p>Hospital bed days saved<sup>10</sup><br><span data-bind="text:Hospital"></span></p>
+							</li>
+						</ul>
+					</div>
+					<p class="footnote">Numbers provided are based on general epidemiological research and on clinical trial experience from the Phase III programme with Xarelto. Healthcare practice<br>may be different in your country (both before and after introduction of Xarelto), and thus the estimation may not reflect your country’s perspective.<br>Actual costs are not included.</p>
+				</section>
+
+				<!-- competitors -->
+				<section class="slide" id="competitors">
+					<h1>Xarelto<sup>®</sup> DVT Patients Reported Higher Satisfaction<sup>a,16</sup></h1>
+					<div class="competitors-area">
+						<div class="arrow">
+							<p>Higher Preference</p>
+							<p>Lower Preference</p>
+						</div>
+						<div class="scales">
+							<div class="horisontal-top-line"></div>
+							<div class="ellipse">
+								<p>72.7</p>
+							</div>
+							<div class="ellipse">
+								<p>80.8</p>
+							</div>
+							<div class="vertical-line"></div>
+							<div class="horisontal-bottom-line">
+								<p>p<0.0001</p>
+							</div>
+							<p>Global satisfaction<sup>b</sup></p>
+						</div>
+						<div class="legends">
+							<div data-value="xarelto" class="legend-xarelto"></div>
+							<div data-value="enoxeparin" class="legend-enoxeparin"></div>
+						</div>
+					</div>
+					<div class="small-info-block">
+						<p><span>TSQM II</span><br>Global Satisfaction</p>
+					</div>
+					<p class="footnote"><sup>a</sup>Patients participating in EINSTEIN DVT trial had confirmed acute symptomatic DVT without symptomatic PE and completed two measures of treatment satisfaction;<br>ACTS (Anti Clot Treatment Scale) and TSQM (Treatment Satisfaction Questionnaire for Medication) in follow up visits.<sup>5,16</sup><br><sup>b</sup>Score values given for burdens and benefits measured by ACTS; effectiveness, side effects, convenience and global satisfaction measured by TSQM scale.16</p>
+				</section>
+			</div>
+		</div>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/knockout-3.1.0.js"></script>
+		<script src="scripts/calculate.js"></script>
+		<script src="scripts/competitors.js"></script>
+</body>
+</html>
