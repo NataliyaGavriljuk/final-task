@@ -88,7 +88,7 @@ function ViewModel(){
 				return "[DVT + PE]";
 			}
 			else{
-				return this.bc() * 1 + this.bcPE() * 1;
+				return (this.bc() * 1 + this.bcPE() * 1).toFixed(2);
 			}
 		}, this);
 
@@ -115,7 +115,7 @@ function ViewModel(){
 				return "[DVT + PE]";
 			}
 			else{
-				return this.h() * 1 + this.j() * 1;
+				return (this.h() * 1 + this.j() * 1).toFixed(2);
 			}
 		}, this);
 	}

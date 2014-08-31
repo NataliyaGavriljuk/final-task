@@ -19,7 +19,7 @@
 .calculation-area .input-data{
 	height: 53px;
 	width: 100%;
-	border: 2px groove #c8c7c7;
+	border: 2px solid #c8c7c7;
 	background: -webkit-linear-gradient(bottom, #9b9a9c 0%, #fdfeff 100%);
 }
 .calculation-area .input-data input{
@@ -29,7 +29,7 @@
 	background: #fff;
 	font: bold 10px "FrutigerLTCondensed";
 	text-align: center;
-	border:1px groove #e0dfdf;
+	border:1px solid #e0dfdf;
 }
 .calculation-area .input-data button:first-of-type{
 	width: 97px;
@@ -46,12 +46,10 @@
 	background: #ededed;
 	color: #502d80;
 	font: 17px "FrutigerBlack";
-	font-weight: bold;
 	border: 1px solid #cfcfd0;
 	border-radius: 20px;
 	margin-left: 34px;
 }
-
 .calculation-area .info{
 	height: 54px;
 	color: #7c7a7b;
@@ -69,16 +67,16 @@
 	font-family: "FrutigerBlack";
 	margin-bottom: 4px;
 }
-.calculation-area ul li:last-of-type .description,
-.calculation-area .right ul li:nth-of-type(2) .description
-{
-	height: 52px;
-}
 .calculation-area ul li:last-of-type{
 	margin-bottom: 9px;
 }
 .calculation-area .left ul li:nth-of-type(3) .description{
 	padding-top: 5px;
+}
+.calculation-area ul li:last-of-type .description,
+.calculation-area .right ul li:nth-of-type(2) .description
+{
+	height: 52px;
 }
 .calculation-area ul li .calculate{
 	height: 33px;
@@ -148,7 +146,6 @@
 	-webkit-box-pack: justify;
 }
 .calculation-area .finally-results li{
-	/* width: 213px; */
 	height: 56px;
 	padding: 8px 9px 0 10px;
 	background: -webkit-linear-gradient(top, rgba(235, 242, 250, 1.0) 0%, rgba(246, 251, 255, 1.0) 100%);

@@ -1,4 +1,8 @@
-/* reset*/
+#graphics,
+#calculator,
+#competitors{
+	-webkit-box-orient: horizontal;
+}
 div,button,input,
 p,ul,li{
 	box-sizing: border-box;
@@ -7,18 +11,10 @@ p,ul,li{
 	margin: 0;
 	padding: 0;
 } 
-div{
-	box-sizing:border-box;
-}
 button{
 	border: none;
 	outline: none;
 	cursor: pointer;
-}
-#graphics,
-#calculator,
-#competitors{
-	-webkit-box-orient: horizontal;
 }
 .wrapper{
 	width: 1024px;
@@ -49,11 +45,12 @@ menu button.selected{
 	width: 100%;
 	padding-top: 87px;
 	height: 768px;
-	box-sizing: border-box;
 	overflow: hidden;
 } 
 .slides{
+	width: 3072px;
 	display: -webkit-box; 
+	-webkit-transition: 1s linear;
 }
 h1{
 	text-align: center;
@@ -66,7 +63,7 @@ h1 sup{
 .footnote {
 	padding-left: 66px;
 	color: #484a4b;
-	font: 14px/16px "FrutigerLTLightCondensed";
+	font: 14px/16px "FrutigerCondensed";
 }
 .footnote sup{
 	font-size: 9px;
@@ -85,14 +82,5 @@ h1 sup{
 .wrapper-content.competitors .slides{
 	-webkit-transform: translate3d(-2048px, 0, 0);
 }
-.chart-area .chart .group-bar .bar{
-	-webkit-transform: scaleY(0); 
-}
-.animate .chart-area .chart .group-bar .bar{
-	-webkit-transition: 1s 0.5s linear;
-	-webkit-transform: scaleY(1); 
-}
-.slides{
-	width: 3072px;
-	-webkit-transition: 1s linear;
-}
+
+

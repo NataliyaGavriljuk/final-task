@@ -1,6 +1,3 @@
-#competitors div{
-	box-sizing:border-box;
-}
 #competitors h1{
 	font-size: 30px;
 	margin-bottom: 49px; 
@@ -81,8 +78,6 @@
 .ellipse:after{
 	content: '';
 	position: absolute;
-	width: 0;
-	height: 0;
 	bottom: 50%;
 }
 .ellipse:before{
@@ -211,8 +206,8 @@
 }
 #competitors .footnote{
 	margin-top: 126px;
-	font-family: "FrutigerLightCondensed";
-	font-size: 12.06px;
+	font-family: "FrutigerCondensed";
+	font-size: 12px;
 	line-height: 11px;
 }
 #competitors .footnote sup{

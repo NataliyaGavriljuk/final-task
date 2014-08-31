@@ -26,7 +26,6 @@
 	height: 100%;
 	float: left;
 	padding: 30px 5px 0 0 ;
-	box-sizing: border-box;
 	border-right: 1px solid #ececec;
 	background: #dad9da;
 }
@@ -36,7 +35,6 @@ ol{
 }
 ol li{
 	text-align: right;
-	width: 100%;
 	margin-bottom: 16px;
 	display: block;
 }
@@ -63,7 +61,7 @@ ol li:last-of-type:after{
 }
 .chart-area .chart h2{
  	margin: 23px 0 13px 0;
- 	font: bold 16px/15px "Arial", sans-serif;
+ 	font: bold 16px/15px "FrutigerLTCondensed";
  	text-align: center;
 }
  .chart-area .chart .group-bar{
@@ -77,6 +75,7 @@ ol li:last-of-type:after{
 	width: 50%;
 	-webkit-border-radius: 5px 5px 0 0;	
 	-webkit-transform-origin-y: bottom;
+	-webkit-transform: scaleY(0); 
 }
 .chart-area .chart .group-bar .bar:first-of-type{
   	height: 100%;
@@ -122,7 +121,6 @@ ol li:last-of-type:after{
   	position: absolute;
   	bottom: 0;
   	right: -110px;
-
   }
  #graphics .footnote {
  	margin-top: 84px;
@@ -130,4 +128,8 @@ ol li:last-of-type:after{
 .animate .chart-area .chart .group-bar .bar p{
 	opacity: 1;
 	-webkit-transition: 0.5s 1.5s linear;
+}
+.animate .chart-area .chart .group-bar .bar{
+	-webkit-transition: 1s 0.5s linear;
+	-webkit-transform: scaleY(1); 
 }
